@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="./assets/img/logovector.svg" alt="Logo DAW Sports"></a>
+    <h1 class="h0">D A W <wbr>S P O R T S *</h1>
+  </header>
+  <nav>
+    <a href="./index.html">
+      INICIO
+    </a>
+    <a href="./servicios.html">
+      SERVICIOS
+    </a>
+    <a href="./contacto.html">
+      CONTACTO
+    </a> 
+  </nav>
+  <h2>CONTACTA CON NOSOTROS</h2>
+  <section class="contacto-section">
+    <article class="contacto-formulario">
+      <h3>Envianos un correo</h3>
+      <div class="tabla">
+        <form method="post" id="contact-form" >
+          <div class="linea">
+            <div class="textos">
+              Nombre
+            </div>
+            <div class="controles">
+              <input  required autofocus type="text" name="nombre" size="30" maxlength="30" placeholder="Introduzca su nombre..." pattern="[A-Za-z0-9]+">
+            </div>
+          </div>
+          <div class="linea">
+            <div class="textos">
+              e-Mail
+            </div>
+            <div class="controles">
+              <input required type="email" placeholder="No te enviaremos demasiado spam" name="email" size="50">
+            </div>
+          </div>
+          <div class="linea">
+            <div class="textos">
+              Edad (+18)
+            </div>
+            <div class="controles">
+              <input required type="number" placeholder="27" name="edad" min="18" max="99" maxlength="2">
+            </div>
+          </div>
+          <div class="linea">
+            <div class="textos">
+              Teléfono
+            </div>
+            <div class="controles">
+              <input required type="tel" placeholder="No lo compartiremos con terceros... (hoy)" name="telefono" size="35" pattern="[0-9]+" maxlength="10">
+            </div>
+          </div>
+          <div class="linea">
+            <div class="textos" id="consulta">
+              Consulta
+            </div>
+            <div class="controles">
+              <textarea required placeholder="Describe lo más detalladamente tu consulta" cols="50" rows="10"></textarea>
+            </div>
+          </div>
+          <div class="linea">
+            <div class="controles" id="cookies-check">
+              <input type="checkbox" name="Aceptacion cookies" required>
+           </div>
+             <div class="textos" id="cookies-text">
+                Acepto la política de privacidad y cookies.
+              </div>
+          </div>
+        </div>
+      
+          <div class="boton-formulario">
+            <input type="submit" name="enviar" value="Enviar" >
+          </div>
+        </form>
+          
+      
+    </article>
+    <article class="contacto-datos">
+      <h3>Contacta directamente</h3>
+      <h4>123 456 789</h4>
+      <h4>C/Sarandonga, 13, 03000, Alicante (Alicante)</h4>
+    </article>
+  </section>
+  
+  <footer>
+    <h4>©2023 Divasi Tech, Sl.</h4>
+    <a href="">Política de privacidad y cookies</a>
+  </footer>
+  
+</body>
+</html>
