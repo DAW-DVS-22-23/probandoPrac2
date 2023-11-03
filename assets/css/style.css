@@ -62,6 +62,7 @@ nav >  a:link{
 }
 nav > a:hover{
   text-decoration: underline;
+  text-decoration-color: red;
   color: white;
 }
 
@@ -74,8 +75,9 @@ section.index-section{
 
 
 article {
+  display: flex;
+  flex-direction: column;
   border-radius: 1em;
-  background-color: rgb(213, 224, 221);
   box-sizing: border-box;
   width: 60%;
   line-height: 1.75;
@@ -84,11 +86,19 @@ article {
   margin-top: 1em;
 }
 
+article > h2 {
+  align-self: flex-start;
+}
+
+article.contacto-datos  a:link, article.contacto-datos  a:visited{
+  color: black;
+}
+
 aside{
   width: 30%;
   display: flex;
-  
-  flex-flow: column;
+  flex-direction: column;
+  align-items: center;
   gap: 1em;
   padding: 1em;
   position: absolute;
@@ -97,8 +107,13 @@ aside{
   overflow: auto;
 }
 
-aside > a {
+aside > a, aside > a:visited {
   color: black;
+}
+
+aside > a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
 }
 
 footer{
@@ -119,6 +134,7 @@ footer > a, footer > a:link{
 
 footer > a:hover {
   text-decoration: underline;
+  text-decoration-color: red;
 }
 form{
   display: table;
@@ -195,9 +211,27 @@ h2 {
 }
 
 .servicios-tabla{
+  font-size: 2em;
   margin: auto;
   width: 100%;
+  text-align: center;
 }
 
+footer .social-media{
+  display: flex;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.social-media i{
+  font-size: 1.5em;
+}
+.social-media a:link{
+  color: white;
+}
+
+.social-media a:visited{
+  color: white;
+}
 
 
