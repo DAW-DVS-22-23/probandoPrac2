@@ -197,6 +197,15 @@ h2 {
   height: 15em;
 }
 
+.contacto-datos  a, .contacto-datos  a:visited {
+  color: black;
+}
+
+.contacto-datos  a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
 .clear{
   clear: both;
 }
