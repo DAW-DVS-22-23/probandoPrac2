@@ -7,9 +7,15 @@
   font-family: "Montserrat";
   src: url(https://fonts.google.com/specimen/Montserrat?query=montserrat);
 }
-body{
-  font-family: Montserrat ;
+*{
   margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  flex-direction: column;;
+  font-family: Montserrat;
+  font-size: 1em;
   height: 100%;
   gap: 2em;
 }
@@ -19,6 +25,10 @@ header{
   height: 5em;
   box-sizing: border-box;
   justify-content: flex-start;
+  background-color: white;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
 }
 
 header > a  img {
@@ -27,7 +37,7 @@ header > a  img {
 
 h1.h0 {
   font-family: Winner;
-  font-size: 40px;
+  font-size: 2.5em;
   justify-self: center;
   margin: 0.15em auto;
 }
@@ -38,7 +48,7 @@ nav {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  margin: 2em 0;
+  margin: 7em 0 2em 0;
 }
 
 a {
@@ -46,7 +56,7 @@ a {
 }
 
 nav > a {
-  font-size: 14px;
+  font-size: 1em;
   box-sizing: border-box;
   width: 10em;
   background-color: black;
@@ -57,7 +67,7 @@ nav > a {
  
 }
 
-nav >  a:link{
+nav >  a:link, nav >  a:visited, nav >  a:active{
   color: white;
 }
 nav > a:hover{
@@ -90,7 +100,7 @@ article > h2 {
   align-self: flex-start;
 }
 
-article.contacto-datos  a:link, article.contacto-datos  a:visited{
+article.contacto-datos  a:link, article.contacto-datos  a:visited, article.contacto-datos  a:hover, article.contacto-datos  a:active{
   color: black;
 }
 
@@ -107,7 +117,7 @@ aside{
   overflow: auto;
 }
 
-aside > a, aside > a:visited {
+aside > a, aside > a:visited, aside > a:link, aside > a:active {
   color: black;
 }
 
@@ -122,13 +132,14 @@ footer{
   color: white;
   background-color: black;
   flex-direction: column;
+  gap: 1em;
   align-items: center;
 }
 
 footer > a{
   margin-bottom: 1em;
 }
-footer > a, footer > a:link{
+footer > a, footer > a:link, footer > a:visited, footer > a:active{
   color: white;
 }
 
@@ -143,6 +154,10 @@ form{
 h2 {
   text-align: center;
 }
+.titulo-contacto {
+  font-variant: small-caps;
+  text-align: center;
+}
 
 .linea {
   display: table-row;
@@ -153,7 +168,7 @@ h2 {
   display: table-cell;
   text-align: right;
   width: 40%;
-  padding-right: 10px;
+  padding-right: 1em;
 }
 
 #consulta{
@@ -185,6 +200,18 @@ h2 {
   width: 30%;
 }
 
+.contacto-formulario input{
+  padding: 0.25em 0;
+  background-color: rgb(236, 255, 255);
+}
+
+.contacto-formulario input:focus{
+  background-color: white;
+}
+.contacto-formulario textarea{
+  background-color: rgb(236, 255, 255);
+}
+
 .contacto-section  h3 {
   text-align: center;
 }
@@ -194,10 +221,9 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 15em;
 }
 
-.contacto-datos  a, .contacto-datos  a:visited {
+.contacto-datos  a, .contacto-datos  a:visited, .contacto-datos  a:link, .contacto-datos  a:hover, .contacto-datos  a:active {
   color: black;
 }
 
@@ -212,11 +238,19 @@ h2 {
 .boton-formulario{
   display: block;
   text-align: center;
-  
+}
+
+.estilo-boton{
+  padding: 0.5em 2em;
+  border-radius: 0.4em;
 }
 
 .tabla {
   display: table;
+}
+
+tr:nth-child(even){
+  background-color: #B4CCC5 ;
 }
 
 .servicios-tabla{
@@ -224,6 +258,16 @@ h2 {
   margin: auto;
   width: 100%;
   text-align: center;
+  table-layout: auto;
+  border-collapse: collapse;
+}
+
+.servicios-tabla  tr:first-child{
+  background-color: rgb(255, 230, 215);
+}
+
+.servicios-tabla > caption:nth-child(even){
+  caption-side: bottom;
 }
 
 footer .social-media{
@@ -235,12 +279,17 @@ footer .social-media{
 .social-media i{
   font-size: 1.5em;
 }
-.social-media a:link{
+.social-media a:link, .social-media a:visited, .social-media a:hover, .social-media a:active{
   color: white;
 }
 
-.social-media a:visited{
-  color: white;
+.whatsapp, .whatsapp a:link, .whatsapp a:visited, .whatsapp a:active, .whatsapp a:visited{
+  z-index: 1;
+  position: fixed;
+  bottom: 0.2em;
+  right: 0.2em;
+  font-size: 2em;
+  color: green;
 }
 
 
