@@ -210,6 +210,11 @@ h2 {
 }
 .contacto-formulario textarea{
   background-color: rgb(236, 255, 255);
+  resize: none;
+}
+
+.contacto-formulario textarea:focus{
+  background-color: white;
 }
 
 .contacto-section  h3 {
@@ -260,6 +265,7 @@ tr:nth-child(even){
   text-align: center;
   table-layout: auto;
   border-collapse: collapse;
+  border: 1px solid #B4CCC5;
 }
 
 .servicios-tabla  tr:first-child{
